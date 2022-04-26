@@ -1,0 +1,35 @@
+package com.zoho.client;
+
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+import java.util.function.Supplier;
+import com.zoho.dao.ThreatsRepository;
+import com.zoho.dao.ThreatsRepositoryImplementation;
+
+public class MainApp {
+	private static final ThreatsRepository<String,String> threatsDB = new ThreatsRepositoryImplementation();
+	public static void main(String[] args) {
+//		AnalyseFirewallLogs.analyseLogs();
+//		threatsDB.save("1", "Ajith");
+//		threatsDB.save("2", "Vijay");
+//		System.out.println(threatsDB.find("2"));
+//		System.out.println(threatsDB.find("1"));
+		// create a client
+		var client = HttpClient.newHttpClient();
+
+		// create a request
+		var request = HttpRequest.newBuilder(
+		       URI.create("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY"))
+		   .header("accept", "application/json")
+		   .build();
+
+		// use the client to send the request
+		var response = client.send(request, new JsonBodyHandler<>(APOD.class));
+
+		// the response:
+		System.out.println(response.body().get().title);
+	}
+
+}

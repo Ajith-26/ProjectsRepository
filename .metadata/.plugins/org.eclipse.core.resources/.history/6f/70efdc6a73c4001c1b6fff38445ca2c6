@@ -1,0 +1,23 @@
+package com.zoho.dao;
+
+public class ThreatsRepositoryImplementation implements ThreatsRepository{
+
+	@Override
+	public void save(Object key, Object value) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Object find(Object key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void delete(Object key) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

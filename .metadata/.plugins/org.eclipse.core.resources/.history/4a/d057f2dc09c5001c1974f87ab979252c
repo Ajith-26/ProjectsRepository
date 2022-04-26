@@ -1,0 +1,5 @@
+package com.zoho.client;
+
+public class JsonBodyHandler<T> {
+
+}

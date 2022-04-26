@@ -1,0 +1,5 @@
+package com.zoho.dao;
+
+public interface ThreatsRepository {
+
+}

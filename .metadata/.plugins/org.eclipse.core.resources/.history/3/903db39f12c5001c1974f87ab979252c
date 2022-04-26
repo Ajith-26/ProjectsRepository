@@ -1,0 +1,104 @@
+package com.zoho.model;
+
+public class Threat {
+	private String is_cloud_provider;
+	private String is_vpn;
+	private String is_tor_exit;
+	private String is_attacker;
+	private String is_relay;
+	private String is_anonymous;
+	private String is_threat;
+	private String is_bogon;
+	private String is_abuser;
+	private String is_tor;
+	private String is_proxy;
+	public String getIs_cloud_provider() {
+		return is_cloud_provider;
+	}
+	public void setIs_cloud_provider(String is_cloud_provider) {
+		this.is_cloud_provider = is_cloud_provider;
+	}
+	public String getIs_vpn() {
+		return is_vpn;
+	}
+	public void setIs_vpn(String is_vpn) {
+		this.is_vpn = is_vpn;
+	}
+	public String getIs_tor_exit() {
+		return is_tor_exit;
+	}
+	public void setIs_tor_exit(String is_tor_exit) {
+		this.is_tor_exit = is_tor_exit;
+	}
+	public String getIs_attacker() {
+		return is_attacker;
+	}
+	public void setIs_attacker(String is_attacker) {
+		this.is_attacker = is_attacker;
+	}
+	public String getIs_relay() {
+		return is_relay;
+	}
+	public void setIs_relay(String is_relay) {
+		this.is_relay = is_relay;
+	}
+	public String getIs_anonymous() {
+		return is_anonymous;
+	}
+	public void setIs_anonymous(String is_anonymous) {
+		this.is_anonymous = is_anonymous;
+	}
+	public String getIs_threat() {
+		return is_threat;
+	}
+	public void setIs_threat(String is_threat) {
+		this.is_threat = is_threat;
+	}
+	public String getIs_bogon() {
+		return is_bogon;
+	}
+	public void setIs_bogon(String is_bogon) {
+		this.is_bogon = is_bogon;
+	}
+	public String getIs_abuser() {
+		return is_abuser;
+	}
+	public void setIs_abuser(String is_abuser) {
+		this.is_abuser = is_abuser;
+	}
+	public String getIs_tor() {
+		return is_tor;
+	}
+	public void setIs_tor(String is_tor) {
+		this.is_tor = is_tor;
+	}
+	public String getIs_proxy() {
+		return is_proxy;
+	}
+	public void setIs_proxy(String is_proxy) {
+		this.is_proxy = is_proxy;
+	}
+	public Threat(String is_cloud_provider, String is_vpn, String is_tor_exit, String is_attacker, String is_relay,
+			String is_anonymous, String is_threat, String is_bogon, String is_abuser, String is_tor, String is_proxy) {
+		super();
+		this.is_cloud_provider = is_cloud_provider;
+		this.is_vpn = is_vpn;
+		this.is_tor_exit = is_tor_exit;
+		this.is_attacker = is_attacker;
+		this.is_relay = is_relay;
+		this.is_anonymous = is_anonymous;
+		this.is_threat = is_threat;
+		this.is_bogon = is_bogon;
+		this.is_abuser = is_abuser;
+		this.is_tor = is_tor;
+		this.is_proxy = is_proxy;
+	}
+	@Override
+	public String toString() {
+		return "Threat [is_cloud_provider=" + is_cloud_provider + ", is_vpn=" + is_vpn + ", is_tor_exit=" + is_tor_exit
+				+ ", is_attacker=" + is_attacker + ", is_relay=" + is_relay + ", is_anonymous=" + is_anonymous
+				+ ", is_threat=" + is_threat + ", is_bogon=" + is_bogon + ", is_abuser=" + is_abuser + ", is_tor="
+				+ is_tor + ", is_proxy=" + is_proxy + "]";
+	}
+	
+}

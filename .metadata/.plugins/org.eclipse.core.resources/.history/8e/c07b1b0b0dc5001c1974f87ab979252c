@@ -1,0 +1,35 @@
+package com.zoho.client;
+
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+
+import org.json.JSONObject;
+
+import com.zoho.dao.ThreatsRepository;
+import com.zoho.dao.ThreatsRepositoryImplementation;
+
+public class MainApp {
+	private static final ThreatsRepository<String,String> threatsDB = new ThreatsRepositoryImplementation();
+	public static void main(String[] args) throws Exception{
+//		AnalyseFirewallLogs.analyseLogs();
+//		threatsDB.save("1", "Ajith");
+//		threatsDB.save("2", "Vijay");
+//		System.out.println(threatsDB.find("2"));
+//		System.out.println(threatsDB.find("1"));
+		// create a client
+		 HttpClient client = HttpClient.newHttpClient();
+	        HttpRequest request = HttpRequest.newBuilder()
+	                .uri(URI.create("https://api.ipregistry.co/171.25.193.78?key=9mv56mm2dpln5e18&fields=security"))
+	                .build();
+
+	        HttpResponse<String> response = client.send(request,
+	                HttpResponse.BodyHandlers.ofString());
+	        JSONObject obj = new JSONObject(response.body());
+
+	        System.out.println(obj.getString("security"));
+	        System.out.println(response.body());
+	}
+
+}

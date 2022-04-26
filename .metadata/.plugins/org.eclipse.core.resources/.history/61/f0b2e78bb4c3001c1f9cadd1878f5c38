@@ -1,0 +1,32 @@
+import java.io.File;
+import java.net.InetAddress;
+import java.util.Scanner;
+public class MainApp {
+	public static void main(String[] args) {
+		try {
+		  File file = new File("C:\\Windows\\System32\\LogFiles\\Firewall\\pfirewall.log");
+		  System.out.println("Hello");
+		  System.out.println("File name: "+file.getName());
+		  System.out.println("File path: "+file.getAbsolutePath());
+		  System.out.println();
+		  Scanner myReader = new Scanner(file);
+		  myReader.nextLine();
+		  myReader.nextLine();
+		  myReader.nextLine();
+		  myReader.nextLine();
+		  myReader.nextLine();
+		  while (myReader.hasNextLine()) {
+			 String data = myReader.nextLine();
+			 String[] parts = data.split(" ");
+			 System.out.println(parts[5]);
+			 System.out.println(InetAddress.getByName(parts[5]));
+		  }
+	      myReader.close();
+	   } 
+	   catch (Exception e) {
+		   System.out.println("An error occurred.");
+		   e.printStackTrace();
+	   }
+
+	}
+}

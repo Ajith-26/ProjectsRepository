@@ -1,0 +1,38 @@
+import java.net.InetAddress;
+public class MainApp {
+	public static void main(String[] args) {
+		 try {
+			 InetAddress addr
+             = InetAddress.getByName("142.250.195.110");
+
+         // Host name
+         System.out.println("Host name is: "
+                            + addr.getHostName());
+         System.out.println("Host address is: "+addr.getHostAddress());
+         System.out.println("Canonical host name is: "+addr.getCanonicalHostName());
+         System.out.println("Address is: "+addr.getAddress());
+         System.out.println("Local host is: "+addr.getLocalHost());
+         
+         // Host Address
+         System.out.println("Ip address is: "
+                            + addr.getHostAddress());
+//		      File file = new File("C:\\Windows\\System32\\LogFiles\\Firewall\\pfirewall.log");
+//		      System.out.println("Hello");
+//		      System.out.println("File name: "+file.getName());
+//		      System.out.println("File path: "+file.getAbsolutePath());
+//		      System.out.println("Size :"+file.getTotalSpace());
+//		      System.out.println();
+//			  Scanner myReader = new Scanner(file);
+//			  while (myReader.hasNextLine()) {
+//			     String data = myReader.nextLine();
+//			     System.out.println(data);
+//			  }
+			  myReader.close();
+		    } catch (Exception e) {
+		      System.out.println("An error occurred.");
+		      e.printStackTrace();
+		    }
+
+	}
+
+}

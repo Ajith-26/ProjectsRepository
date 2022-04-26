@@ -1,0 +1,106 @@
+package com.zoho.model;
+
+public class Threat {
+	private boolean is_cloud_provider;
+	private boolean is_vpn;
+	private boolean is_tor_exit;
+	private boolean is_attacker;
+	private boolean is_relay;
+	private boolean is_anonymous;
+	private boolean is_threat;
+	private boolean is_bogon;
+	private boolean is_abuser;
+	private boolean is_tor;
+	private boolean is_proxy;
+	public Threat(boolean is_cloud_provider, boolean is_vpn, boolean is_tor_exit, boolean is_attacker, boolean is_relay,
+			boolean is_anonymous, boolean is_threat, boolean is_bogon, boolean is_abuser, boolean is_tor,
+			boolean is_proxy) {
+		super();
+		this.is_cloud_provider = is_cloud_provider;
+		this.is_vpn = is_vpn;
+		this.is_tor_exit = is_tor_exit;
+		this.is_attacker = is_attacker;
+		this.is_relay = is_relay;
+		this.is_anonymous = is_anonymous;
+		this.is_threat = is_threat;
+		this.is_bogon = is_bogon;
+		this.is_abuser = is_abuser;
+		this.is_tor = is_tor;
+		this.is_proxy = is_proxy;
+	}
+	public boolean isIs_cloud_provider() {
+		return is_cloud_provider;
+	}
+	public void setIs_cloud_provider(boolean is_cloud_provider) {
+		this.is_cloud_provider = is_cloud_provider;
+	}
+	public boolean isIs_vpn() {
+		return is_vpn;
+	}
+	public void setIs_vpn(boolean is_vpn) {
+		this.is_vpn = is_vpn;
+	}
+	public boolean isIs_tor_exit() {
+		return is_tor_exit;
+	}
+	public void setIs_tor_exit(boolean is_tor_exit) {
+		this.is_tor_exit = is_tor_exit;
+	}
+	public boolean isIs_attacker() {
+		return is_attacker;
+	}
+	public void setIs_attacker(boolean is_attacker) {
+		this.is_attacker = is_attacker;
+	}
+	public boolean isIs_relay() {
+		return is_relay;
+	}
+	public void setIs_relay(boolean is_relay) {
+		this.is_relay = is_relay;
+	}
+	public boolean isIs_anonymous() {
+		return is_anonymous;
+	}
+	public void setIs_anonymous(boolean is_anonymous) {
+		this.is_anonymous = is_anonymous;
+	}
+	public boolean isIs_threat() {
+		return is_threat;
+	}
+	public void setIs_threat(boolean is_threat) {
+		this.is_threat = is_threat;
+	}
+	public boolean isIs_bogon() {
+		return is_bogon;
+	}
+	public void setIs_bogon(boolean is_bogon) {
+		this.is_bogon = is_bogon;
+	}
+	public boolean isIs_abuser() {
+		return is_abuser;
+	}
+	public void setIs_abuser(boolean is_abuser) {
+		this.is_abuser = is_abuser;
+	}
+	public boolean isIs_tor() {
+		return is_tor;
+	}
+	public void setIs_tor(boolean is_tor) {
+		this.is_tor = is_tor;
+	}
+	public boolean isIs_proxy() {
+		return is_proxy;
+	}
+	public void setIs_proxy(boolean is_proxy) {
+		this.is_proxy = is_proxy;
+	}
+	@Override
+	public String toString() {
+		return "Threat [is_cloud_provider=" + is_cloud_provider + ", is_vpn=" + is_vpn + ", is_tor_exit=" + is_tor_exit
+				+ ", is_attacker=" + is_attacker + ", is_relay=" + is_relay + ", is_anonymous=" + is_anonymous
+				+ ", is_threat=" + is_threat + ", is_bogon=" + is_bogon + ", is_abuser=" + is_abuser + ", is_tor="
+				+ is_tor + ", is_proxy=" + is_proxy + "]";
+	}
+	
+	
+}

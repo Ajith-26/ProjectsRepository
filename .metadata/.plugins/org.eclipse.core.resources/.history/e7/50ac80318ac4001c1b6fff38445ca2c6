@@ -1,0 +1,16 @@
+package com.zoho.client;
+
+import com.zoho.dao.ThreatsRepository;
+import com.zoho.fetchlogs.AnalyseFirewallLogs;
+
+public class MainApp {
+	private static final ThreatsRepository<String,String> threatsDB;
+	public static void main(String[] args) {
+//		AnalyseFirewallLogs.analyseLogs();
+		threatsDB.save("1", "Ajith");
+		threatsDB.save("2", "Vijay");
+		System.out.println(threatsDB.find("2"));
+		System.out.println(threatsDB.find("1"));
+	}
+
+}

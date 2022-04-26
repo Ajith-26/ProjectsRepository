@@ -1,0 +1,15 @@
+package com.zoho.model;
+
+public class Threat {
+	private String "is_cloud_provider";
+	private String "is_vpn";
+	private String "is_tor_exit";
+	private String "is_attacker";
+	private String "is_relay";
+	private String "is_anonymous"
+	private String "is_threat";
+	private String "is_bogon";
+	private String "is_abuser";
+	private String "is_tor":true;
+	private String "is_proxy":true
+}

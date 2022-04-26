@@ -1,0 +1,27 @@
+package com.zoho.client;
+
+import java.io.IOException;
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+
+import org.json.JSONObject;
+
+import com.zoho.dao.ThreatsRepository;
+import com.zoho.dao.ThreatsRepositoryImplementation;
+import com.zoho.fetchlogs.LogsAnalysis;
+
+public class MainApp {
+	public static void main(String[] args) throws Exception{
+		LogsAnalysis  service = new LogsAnalysis();
+		service.analyseLogs();
+//		AnalyseFirewallLogs.analyseLogs();
+//		threatsDB.save("1", "Ajith");
+//		threatsDB.save("2", "Vijay");
+//		System.out.println(threatsDB.find("2"));
+//		System.out.println(threatsDB.find("1"));
+		
+	}
+
+}
